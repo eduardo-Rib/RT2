@@ -35,8 +35,8 @@ Abra o tsconfig.json e altere estas opções:
 ```json
 "outDir": "./dist",
 "rootDir": "./src",
-"module": "ESNext",
-"moduleResolution": "Node"
+"module": "NodeNext",
+"moduleResolution": "NodeNext"
 ```
 Explicação:
 
@@ -58,5 +58,19 @@ Isso criará dist/index.js.
 ### 6. Rodar o código
 Agora, execute o código compilado no Node.js:
 ```
-node dist/index.js
+node dist/main.js
+```
+
+### 7, Instalar Readline-sync
+
+Digite o seguinte comando:
+
+```
+npm install readline-sync
+```
+
+Instale as definições de tipo para readline-sync:
+
+```
+npm install --save-dev @types/readline-sync
 ```
